@@ -13,13 +13,6 @@ h1 {
     font-size: 3em;
     text-shadow: 2px 2px 5px #000000;
     margin-top: 20px;
-    animation: glow 2s infinite alternate;
-}
-
-/* Glow animation */
-@keyframes glow {
-    0% { text-shadow: 2px 2px 5px #000; }
-    100% { text-shadow: 2px 2px 15px #fff; }
 }
 
 /* Link menu */
@@ -43,30 +36,18 @@ a:hover {
     font-size: 1.5em;
     border-radius: 25px;
     display: inline-block;
-    transform: rotate(-5deg);
-    z-index: 1;
-    position: relative;
 }
 
-/* Container mano */
-.hand-container {
+/* Container immagine */
+.image-container {
     margin-top: 40px;
-    perspective: 1000px; /* effetto 3D */
-    z-index: 10; /* sopra il box */
-    position: relative;
 }
 
-/* Icona mano */
-.hand-icon {
-    width: 200px;
-    transition: transform 0.5s;
-    transform: rotateY(-20deg) rotateX(10deg);
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+/* Immagine */
+.main-image {
+    width: 300px;
     display: block;
-    margin: 0 auto; /* centra l'immagine */
-}
-
-/* Hover effetto 3D */
-.hand-icon:hover {
-    transform: rotateY(0deg) rotateX(0deg);
+    margin: 0 auto; /* centra */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+    border-radius: 15px;
 }
