@@ -1,12 +1,12 @@
-/* --- BACKGROUND & GENERAL STYLE --- */
+/* Background & text */
 body {
     background: linear-gradient(45deg, #ff00ff, #00ffff);
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: yellow;
     text-align: center;
+    perspective: 1000px; /* necessario per effetto 3D */
 }
 
-/* --- TITLE GLOW EFFECT --- */
 h1 {
     font-size: 3em;
     animation: glow 2s infinite alternate;
@@ -17,7 +17,6 @@ h1 {
     100% { text-shadow: 0 0 20px #ff0; }
 }
 
-/* --- LINKS --- */
 a {
     text-decoration: none;
     font-weight: bold;
@@ -28,7 +27,6 @@ a:hover {
     color: red;
 }
 
-/* --- FUNKY BOX --- */
 .weird-box {
     margin-top: 50px;
     padding: 30px;
@@ -39,62 +37,44 @@ a:hover {
     transform: rotate(-5deg);
 }
 
-/* ===================================================== */
-/* ==== ANIMATED LEFT-HAND (MANCINA) ==================== */
-/* ===================================================== */
-
-.hand {
-    width: 150px;
-    height: 200px;
-    background: #e7c29f;
-    border-radius: 60px;
-    position: relative;
-    transform: scaleX(-1);
-    animation: openHand 2s infinite alternate ease-in-out;
-    margin-top: 30px;
+/* Hand container centered */
+.hand-container {
+    width: 200px;
+    margin: 50px auto;
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg) rotateX(10deg); /* inclinata a sinistra */
 }
 
+/* Hand base */
+.hand {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: wave 2s infinite alternate ease-in-out;
+}
+
+/* Fingers */
 .finger {
-    width: 35px;
-    height: 90px;
-    background: #e7c29f;
-    border-radius: 25px;
     position: absolute;
-    top: -80px;
+    bottom: 0;
+    width: 25px;
+    height: 80px;
+    background: linear-gradient(to top, #ff0, #ff8000);
+    border-radius: 12px;
     transform-origin: bottom center;
 }
 
-.f1 { left: 5px;  animation: f1move 2s infinite alternate ease-in-out; }
-.f2 { left: 40px; animation: f2move 2s infinite alternate ease-in-out; }
-.f3 { left: 75px; animation: f3move 2s infinite alternate ease-in-out; }
-.f4 { left: 110px; animation: f4move 2s infinite alternate ease-in-out; }
+/* Posizione dita */
+.f1 { left: 10px; transform: rotateZ(-5deg); }
+.f2 { left: 45px; transform: rotateZ(-2deg); }
+.f3 { left: 80px; transform: rotateZ(0deg); }
+.f4 { left: 115px; transform: rotateZ(2deg); }
+.thumb { left: -20px; bottom: 20px; width: 30px; height: 60px; background: linear-gradient(to top, #ff0, #ffa500); transform: rotateZ(-40deg) rotateY(-20deg); border-radius: 15px; }
 
-.thumb {
-    width: 50px;
-    height: 80px;
-    background: #e7c29f;
-    border-radius: 25px;
-    position: absolute;
-    right: -30px;
-    top: 60px;
-    transform-origin: left center;
-    animation: thumbmove 2s infinite alternate ease-in-out;
-}
-
-/* --- Finger animations --- */
-@keyframes f1move { from { transform: rotate(-40deg); } to { transform: rotate(0deg); } }
-@keyframes f2move { from { transform: rotate(-30deg); } to { transform: rotate(0deg); } }
-@keyframes f3move { from { transform: rotate(-20deg); } to { transform: rotate(0deg); } }
-@keyframes f4move { from { transform: rotate(-10deg); } to { transform: rotate(0deg); } }
-
-/* --- Thumb animation --- */
-@keyframes thumbmove {
-    from { transform: rotate(-50deg); }
-    to   { transform: rotate(0deg); }
-}
-
-/* --- Palm animation --- */
-@keyframes openHand {
-    from { transform: scaleX(-1) scale(0.95); }
-    to   { transform: scaleX(-1) scale(1.05); }
+/* Animazione dita */
+@keyframes wave {
+    0% { transform: rotateX(10deg) rotateY(-30deg); }
+    50% { transform: rotateX(15deg) rotateY(-30deg); }
+    100% { transform: rotateX(10deg) rotateY(-30deg); }
 }
