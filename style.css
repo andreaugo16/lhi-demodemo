@@ -51,8 +51,8 @@ a:hover {
 /* Container mano */
 .hand-container {
     margin-top: 40px;
-    perspective: 1000px; /* per effetto 3D */
-    z-index: 10; /* sopra lo sfondo e la box */
+    perspective: 1000px; /* effetto 3D */
+    z-index: 10; /* sopra il box */
     position: relative;
 }
 
