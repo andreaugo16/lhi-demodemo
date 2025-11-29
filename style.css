@@ -31,14 +31,52 @@ a:hover {
 .weird-box {
     margin: 200px auto;
     padding: 300px;
-    background-image: url('angelcover.jpg'); /* nome del file immagine */
-    background-size: cover;      /* fa riempire tutto il box */
-    background-position: center; /* centra l'immagine */
-    background-repeat: no-repeat;/* evita ripetizioni */
-    color: #ffffff;              /* testo visibile sopra l'immagine */
+    position: relative;
+    background-image: url('angelcover.jpg'); /* sostituisci con il tuo file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* colore testo sopra l'immagine */
     font-size: 1.5em;
     border-radius: 25px;
     display: inline-block;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Overlay leggero sopra l'immagine */
+.weird-box::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 66, 32, 0.4); /* overlay semi-trasparente */
+    border-radius: 25px;
+    z-index: 0;
+}
+
+/* Testo sopra overlay */
+.weird-box * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Effetto hover: ingrandisce e aggiunge ombra */
+.weird-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Animazione leggera tipo “floating” */
+@keyframes floatBox {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.weird-box {
+    animation: floatBox 4s ease-in-out infinite;
 }
 
 
