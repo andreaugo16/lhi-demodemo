@@ -105,3 +105,25 @@ a:hover {
     border-radius: 8px;
     object-fit: cover;
 }
+
+/* Container per le immagini in fila */
+.images-row {
+    display: flex;          /* attiva il layout a riga */
+    justify-content: center; /* centra le immagini orizzontalmente */
+    gap: 20px;              /* spazio tra le immagini */
+    margin-top: 30px;       /* distanza dal contenuto sopra */
+}
+
+/* Immagini */
+.main-image {
+    width: 200px;           /* puoi cambiare la dimensione */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+    transform: scale(1.1);  /* effetto hover */
+}
+
