@@ -12,18 +12,19 @@ body {
 h1 {
     font-size: 3em;
     margin-top: 20px;
+    color: #002fff;
 }
 
 /* Link menu */
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #000000;
+    color: #008537;
     margin: 0 10px;
 }
 
 a:hover {
-    color: #000000;
+    color: #ff0000;
 }
 
 /* Weird box */
@@ -31,7 +32,7 @@ a:hover {
     margin: 30px auto;
     padding: 30px;
     background: #ffffff;
-    color: #000000;
+    color: #900000;
     font-size: 1.5em;
     border-radius: 25px;
     display: inline-block;
