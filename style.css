@@ -31,12 +31,16 @@ a:hover {
 .weird-box {
     margin: 200px auto;
     padding: 300px;
-    background: #ffffff;
-    color: #000000;
+    background-image: url('angelcover.jpg'); /* nome del file immagine */
+    background-size: cover;      /* fa riempire tutto il box */
+    background-position: center; /* centra l'immagine */
+    background-repeat: no-repeat;/* evita ripetizioni */
+    color: #ffffff;              /* testo visibile sopra l'immagine */
     font-size: 1.5em;
     border-radius: 25px;
     display: inline-block;
 }
+
 
 /* Container immagine */
 .image-container {
