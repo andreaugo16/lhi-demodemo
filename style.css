@@ -1,8 +1,8 @@
 /* Body e background */
 body {
-    background:  #1b4220;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #ffffff;
+    background:  #ffffff;
+    font-family: 'Aniron';
+    color: #000000;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ a:hover {
 .weird-box {
     margin: 30px auto;
     padding: 30px;
-    background: #212323;
+    background: #ffffff;
     color: #b93118;
     font-size: 1.5em;
     border-radius: 25px;
