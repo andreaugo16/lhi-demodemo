@@ -51,7 +51,7 @@ a:hover {
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(255, 255, 255); /* overlay semi-trasparente */
+    background: rgb(0, 0, 0); /* overlay semi-trasparente */
     border-radius: 120px;
     z-index: 0;
 }
