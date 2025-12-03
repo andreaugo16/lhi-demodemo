@@ -89,7 +89,7 @@ a:hover {
 .main-image {
     width: 300px;
     display: block;
-    margin: 0 auto; /* centra */
+    margin: 100 px; /* centra */
     border-radius: 15px;
 }
 
@@ -124,6 +124,6 @@ a:hover {
 }
 
 .main-image:hover {
-    transform: scale(1.1);  /* effetto hover */
+    transform: scale(1.5);  /* effetto hover */
 }
 
