@@ -32,43 +32,40 @@ a:hover {
     margin: 200px auto;
     padding: 300px;
     position: relative;
-    background-image: url('angelcover.jpg'); /* tua immagine */
+    background-image: url('angelcover.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ffffff; /* testo sopra immagine */
+    color: #ffffff;
     font-size: 1.5em;
-    border-radius: 25px; /* più piccolo del precedente 120px */
+    border-radius: 25px;
     display: inline-block;
     overflow: hidden;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Overlay più leggero e trasparente */
+/* Overlay */
 .weird-box::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* trasparenza 0.3 invece di rgb(0,0,0) pieno */
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     z-index: 0;
 }
 
-/* Testo sopra overlay */
 .weird-box * {
     position: relative;
     z-index: 1;
 }
 
-/* Hover */
 .weird-box:hover {
     transform: scale(1.20);
     box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
-/* Floating leggero */
 @keyframes floatBox {
     0% { transform: translateY(0); }
     50% { transform: translateY(-30px); }
@@ -79,7 +76,6 @@ a:hover {
     animation: floatBox 4s ease-in-out infinite;
 }
 
-
 /* Container immagine */
 .image-container {
     margin-top: 40px;
@@ -89,10 +85,11 @@ a:hover {
 .main-image {
     width: 300px;
     display: block;
-    margin: 100px; /* centra */
+    margin: 100px;
     border-radius: 15px;
 }
 
+/* Galleria */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
@@ -106,17 +103,16 @@ a:hover {
     object-fit: cover;
 }
 
-/* Container per le immagini in fila */
+/* Contenitore immagini in fila */
 .images-row {
-    display: flex;          /* attiva il layout a riga */
-    justify-content: center; /* centra le immagini orizzontalmente */
-    gap: 20px;              /* spazio tra le immagini */
-    margin-top: 30px;       /* distanza dal contenuto sopra */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-/* Immagini */
 .main-image {
-    width: 200px;           /* puoi cambiare la dimensione */
+    width: 200px;
     height: auto;
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
@@ -124,6 +120,140 @@ a:hover {
 }
 
 .main-image:hover {
-    transform: scale(1.5);  /* effetto hover */
+    transform: scale(1.5);
 }
 
+/* ------------------------------ */
+/* NUOVA PARTE: immagini + descrizione */
+/* ------------------------------ */
+
+.row-with-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;          /* spazio tra immagini e descrizione */
+    margin-top: 60px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Descrizione a destra */
+.side-description {
+    max-width: 320px;
+    text-align: left;
+    font-size: 1.3em;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+/* Titolo descrizione */
+.side-description h2 {
+    margin-top: 0;
+    color: #6dff7a;
+}
+
+/* --- DESCRIZIONE NEON + FLOATING --- */
+
+.side-description {
+    max-width: 320px;
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 15px;
+
+    /* sfondo semi trasparente */
+    background: rgba(0, 0, 0, 0.4);
+
+    /* NEON verde */
+    border: 2px solid #6dff7a;
+    box-shadow:
+        0 0 10px #6dff7a,
+        0 0 20px #6dff7a,
+        0 0 30px #6dff7a;
+
+    /* Animazione floating */
+    animation: floatDesc 4s ease-in-out infinite;
+}
+
+/* Titolo descrizione con neon più forte */
+.side-description h2 {
+    color: #6dff7a;
+    text-shadow:
+        0 0 10px #6dff7a,
+        0 0 20px #6dff7a;
+}
+
+/* Animazione */
+@keyframes floatDesc {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* --- BOX DESCRIZIONE CON EFFETTO GLITCH --- */
+
+.side-description {
+    position: relative;
+    max-width: 320px;
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 1.5;
+    padding: 20px;
+    border-radius: 15px;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    border: 2px solid #6dff7a;
+    box-shadow:
+        0 0 10px #6dff7a,
+        0 0 20px #6dff7a,
+        0 0 30px #6dff7a;
+
+    color: #ffffff;
+
+    /* ANIMAZIONE PRINCIPALE */
+    animation: glitchBox 3s infinite;
+}
+
+/* Titolo neon + glitch */
+.side-description h2 {
+    color: #6dff7a;
+    text-shadow:
+        0 0 5px #6dff7a,
+        0 0 10px #6dff7a,
+        0 0 20px #6dff7a;
+    animation: glitchText 1.5s infinite;
+}
+
+/* TESTO glitch effetto RGB */
+.side-description p {
+    animation: glitchText 2s infinite;
+}
+
+/* --- ANIMAZIONI GLITCH --- */
+
+/* Tremolio e shift */
+@keyframes glitchText {
+    0% { transform: translate(0); text-shadow: 0 0 0 transparent; }
+    20% { transform: translate(-1px, 1px); text-shadow: -2px 0 red, 2px 0 blue; }
+    40% { transform: translate(1px, -1px); text-shadow: -2px 0 blue, 2px 0 red; }
+    60% { transform: translate(-1px, -1px); text-shadow: -3px 0 #6dff7a, 3px 0 red; }
+    80% { transform: translate(0.5px, 0); text-shadow: 2px 0 blue, -2px 0 red; }
+    100% { transform: translate(0); text-shadow: none; }
+}
+
+/* Micro-disturbi dell'intero box */
+@keyframes glitchBox {
+    0% { transform: translate(0); }
+    10% { transform: translate(-1px, 1px); }
+    20% { transform: translate(1px, -1px); }
+    30% { transform: translate(-1px, 0); }
+    40% { transform: translate(1px, 1px); }
+    50% { transform: translate(0); }
+    60% { transform: translate(-1px, -1px); }
+    70% { transform: translate(1px, 0); }
+    80% { transform: translate(-0.5px, 1px); }
+    100% { transform: translate(0); }
+}
