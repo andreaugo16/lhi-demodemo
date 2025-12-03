@@ -257,3 +257,86 @@ a:hover {
     80% { transform: translate(-0.5px, 1px); }
     100% { transform: translate(0); }
 }
+
+/* Evita distorsione immagini */
+.main-image,
+.gallery img,
+.images-row img {
+    width: 100%;
+    height: auto;        /* mantiene proporzioni */
+    aspect-ratio: auto;  /* impedisce deformazioni */
+    object-fit: contain; /* NON taglia, non deforma */
+    border-radius: 15px;
+}
+
+/* --- GLITCH PRO CON EFFETTO CYBER, RGB E SCANLINES --- */
+
+.side-description {
+    position: relative;
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+
+    background: rgba(0, 0, 0, 0.45);
+    border: 2px solid #6dff7a;
+
+    color: #ffffff;
+    overflow: hidden;
+    animation: glitchBox 3s infinite;
+}
+
+/* scanlines effetto TV */
+.side-description::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.04) 0px,
+        rgba(255,255,255,0.04) 1px,
+        rgba(0,0,0,0) 2px
+    );
+
+    mix-blend-mode: overlay;
+    animation: scanlines 8s linear infinite;
+}
+
+/* RGB split glitch */
+.side-description h2,
+.side-description p {
+    animation: rgbGlitch 2s infinite steps(2);
+}
+
+/* Animazioni */
+
+/* movimento glitch casuale */
+@keyframes glitchBox {
+    0% { transform: translate(0); }
+    10% { transform: translate(-2px, 1px); }
+    20% { transform: translate(2px, -1px); }
+    30% { transform: translate(-1px, 0); }
+    40% { transform: translate(1px, 1px); }
+    55% { transform: translate(0); }
+    65% { transform: translate(-1px, -1px); }
+    80% { transform: translate(1px, 0); }
+    100% { transform: translate(0); }
+}
+
+/* VHS glitch RGB */
+@keyframes rgbGlitch {
+    0% { text-shadow: 0 0 0 transparent; }
+    20% { text-shadow: -3px 0 red, 3px 0 blue; }
+    40% { text-shadow: -2px 0 blue, 2px 0 red; }
+    60% { text-shadow: 3px 0 #6dff7a, -3px 0 red; }
+    80% { text-shadow: -2px 0 red, 2px 0 blue; }
+    100% { text-shadow: none; }
+}
+
+/* scanlines che scorrono */
+@keyframes scanlines {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
