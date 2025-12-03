@@ -262,11 +262,11 @@ a:hover {
 .main-image,
 .gallery img,
 .images-row img {
-    width: 100%;
-    height: auto;        /* mantiene proporzioni */
-    aspect-ratio: auto;  /* impedisce deformazioni */
-    object-fit: contain; /* NON taglia, non deforma */
-    border-radius: 15px;
+    max-width: 300px;   /* dimensione massima della larghezza */
+    width: 100%;        /* si adatta al contenitore */
+    height: auto;       /* mantiene proporzioni */
+    object-fit: contain;/* non taglia e non deforma */
+  
 }
 
 /* --- GLITCH PRO CON EFFETTO CYBER, RGB E SCANLINES --- */
