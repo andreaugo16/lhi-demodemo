@@ -89,11 +89,17 @@ a:hover {
     width: 60%;
     margin: 40px auto;
     text-align: left;
-    line-height: 1.6em;
-    font-family: 'GodOfWar';
-    font-size: 1.2em;
-
+    line-height: 1.8em;
+    font-family: 'GodOfWar', 'UnifrakturCook', serif; /* font epico/nordico */
+    font-size: 1.3em;
+    color: #d0d0d0;
+    background: rgba(20, 20, 30, 0.85); /* sfondo scuro semi-trasparente */
+    border: 3px solid #778899; /* bordo stile metallo/freddo */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6); /* effetto profondo e mistico */
 }
+
 
 
 /* Container immagine */
