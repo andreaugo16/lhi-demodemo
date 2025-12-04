@@ -1,5 +1,9 @@
-document.getElementById("playButton").addEventListener("click", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.getElementById("playButton");
     const audio = document.getElementById("bgMusic");
-    audio.volume = 0.3;      // volume iniziale
-    audio.play();
+
+    button.addEventListener("click", function() {
+        audio.volume = 0.3;
+        audio.play();
+    });
 });
