@@ -2,7 +2,7 @@
 body {
     background:  #000000;
     font-family: 'Ringbearer Medium';
-    color: #ffffff;
+    color: #ffb872;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ h1 {
     font-size: 3em;
     margin-top: 20px;
     color: #ffffff;
-    font-family: 'Ringbearer Medium';
     
 }
 
@@ -91,7 +90,9 @@ a:hover {
     margin: 40px auto;
     text-align: left;
     line-height: 1.6em;
+    font-family: 'GodOfWar';
     font-size: 1.2em;
+
 }
 
 
