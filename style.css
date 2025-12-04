@@ -20,7 +20,7 @@ h1 {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #6dff7a;
+    color: #ffc800;
     margin: 0 10px;
 }
 
@@ -92,8 +92,8 @@ a:hover {
     line-height: 1.8em;
     font-family: 'GodOfWar', 'UnifrakturCook', serif; /* font epico/nordico */
     font-size: 1.3em;
-    color: #d0d0d0;
-    background: rgba(20, 20, 30, 0.85); /* sfondo scuro semi-trasparente */
+    color: #ff9100;
+    background: rgba(135, 87, 87, 0.85); /* sfondo scuro semi-trasparente */
     border: 3px solid #778899; /* bordo stile metallo/freddo */
     border-radius: 20px;
     padding: 40px;
