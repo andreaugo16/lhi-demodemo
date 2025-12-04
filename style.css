@@ -93,12 +93,36 @@ a:hover {
     font-family: 'GodOfWar', 'UnifrakturCook', serif; /* font epico/nordico */
     font-size: 1.3em;
     color: #ff9100;
-    background: rgba(135, 87, 87, 0.85); /* sfondo scuro semi-trasparente */
+    background: rgba(116, 234, 255, 0.85); /* sfondo semi-trasparente */
     border: 3px solid #778899; /* bordo stile metallo/freddo */
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 0 30px rgba(0,0,0,0.6); /* effetto profondo e mistico */
+    position: relative; /* necessario per posizionare il “fuoco” sotto */
 }
+
+/* Effetto fuoco sotto il box */
+.story-text::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;  /* sotto il box */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 40px;
+    background: radial-gradient(ellipse at center, rgba(255,140,0,0.7), transparent 70%);
+    filter: blur(20px);
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Pulsazione fiamma quando hover */
+.story-text:hover::after {
+    filter: blur(25px);
+    background: radial-gradient(ellipse at center, rgba(255,200,50,0.8), transparent 70%);
+    transform: translateX(-50%) scaleX(1.05);
+}
+
 
 
 
