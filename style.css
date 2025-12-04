@@ -38,7 +38,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ff0000;
+    color: #98f1ff;
     font-size: 1.5em;
     font-family: 'GodOfWar';
     border-radius: 25px;
@@ -78,6 +78,22 @@ a:hover {
 .weird-box {
     animation: floatBox 4s ease-in-out infinite;
 }
+
+/* Rimuove stile ai link che avvolgono il weird-box */
+.weird-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.story-text {
+    width: 60%;
+    margin: 40px auto;
+    text-align: left;
+    line-height: 1.6em;
+    font-size: 1.2em;
+}
+
 
 /* Container immagine */
 .image-container {
