@@ -192,7 +192,7 @@ a:hover {
     border: 35px solid transparent;
     box-sizing: border-box;
 
-    border-image-source: url("rune-border.png");
+    border-image-source: url("cornicrune.png");
     border-image-slice: 50;
     border-image-repeat: round;
     border-image-width: 35px;
