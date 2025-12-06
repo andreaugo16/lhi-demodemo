@@ -82,12 +82,7 @@ a:hover {
     animation: floatBox 4s ease-in-out infinite;
 }
 
-/* Rimuove stile ai link che avvolgono il weird-box */
-.weird-link {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-}
+
 
 .story-text {
     position: relative;
@@ -137,25 +132,6 @@ a:hover {
 
     animation: runeGlow 3.5s infinite alternate;
 
-
- /* 🔥 Effetto pulse sulle rune */
- @keyframes runeGlow {
-    0% {
-        text-shadow:
-            0 0 6px rgba(255,80,0,0.6),
-            0 0 14px rgba(255,40,0,0.7);
-    }
-    50% {
-        text-shadow:
-            0 0 14px rgba(255,120,0,1),
-            0 0 28px rgba(255,60,0,1);
-    }
-    100% {
-        text-shadow:
-            0 0 6px rgba(255,80,0,0.6),
-            0 0 14px rgba(255,40,0,0.7);
-    }
- }
 }
 
 
