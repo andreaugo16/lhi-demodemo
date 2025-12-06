@@ -117,7 +117,7 @@ a:hover {
 
 /* BORDO CON RUNE INCANDESCENTI */
 .story-text::before {
-    content: "ᚠᚢᚦᚨᚱᛁᚲᚾᛊᚷᚨᛒᚱᛟᚲᚹᚾᛗ";
+    content: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚷᚨᚦᛖᚱ ᚨᚱᛟᚢᚾᛞ ᚦᛖ ᚠᛁᚱᛖ ᛟᚠ ᚱᛖᚢᛟᛚᚢᛏᛟᚾ";
     /* puoi cambiare queste rune con le tue preferite */
     font-family: 'GodOfWar';
     letter-spacing: 8px;
@@ -143,9 +143,9 @@ a:hover {
 
 /* GLOW delle rune */
 @keyframes runeGlow {
-    0%   { text-shadow: 0 0 8px rgba(255,80,10,0.6), 0 0 18px rgba(255,40,0,0.7); }
-    50%  { text-shadow: 0 0 15px rgba(255,120,30,1), 0 0 35px rgba(255,80,0,1); }
-    100% { text-shadow: 0 0 8px rgba(255,80,10,0.6), 0 0 18px rgba(255,40,0,0.7); }
+    0%   { text-shadow: 0 0 8px rgba(0, 0, 0, 0.6), 0 0 18px rgba(255,40,0,0.7); }
+    50%  { text-shadow: 0 0 15px rgb(220, 16, 9), 0 0 35px rgba(255,80,0,1); }
+    100% { text-shadow: 0 0 8px rgba(103, 4, 4, 0.6), 0 0 18px rgba(255,40,0,0.7); }
 }
 
 /* BORDO RUNICO SUI LATI (effetto inciso) */
