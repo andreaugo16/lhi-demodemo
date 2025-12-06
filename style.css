@@ -1,6 +1,10 @@
 /* Body e background */
 body {
-    background:  #000000;
+    background-image: url('thegodofauraleftflame.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* effetto epico parallax */
     font-family: 'Ringbearer Medium';
     color: #ffb872;
     text-align: center;
