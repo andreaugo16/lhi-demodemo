@@ -153,7 +153,7 @@ a:hover {
 /* 🔥 LATO SINISTRO */
 .story-text .runes-left {
     position: absolute;
-    left: -60px;
+    left: -90px;
     top: 50%;
     transform: translateY(-50%);
     writing-mode: vertical-rl;
@@ -165,7 +165,7 @@ a:hover {
 /* 🔥 LATO DESTRO */
 .story-text .runes-right {
     position: absolute;
-    right: -60px;
+    right: -90px;
     top: 50%;
     transform: translateY(-50%);
     writing-mode: vertical-rl;
