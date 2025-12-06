@@ -17,7 +17,6 @@ h1 {
     font-size: 3em;
     margin-top: 20px;
     color: #ffffff;
-    
 }
 
 /* Link menu */
@@ -37,11 +36,11 @@ a:hover {
     margin: 200px auto;
     padding: 300px;
     position: relative;
-    background-image: url('angelcover.jpg');
+    background-image: url('Hortus_Deliciarum.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #98f1ff;
+    color: #000000;
     font-size: 1.5em;
     font-family: 'GodOfWar';
     border-radius: 25px;
