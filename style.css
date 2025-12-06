@@ -90,130 +90,49 @@ a:hover {
 }
 
 .story-text {
-    width: 60%;
-    margin: 40px auto;
-    text-align: left;
-    line-height: 1.6em;
-    font-family: 'GodOfWar';
-    font-size: 1.2em;
-    padding: 30px;
-    color: #fff;
-    border-radius: 12px;
     position: relative;
-    z-index: 2;
-
-    /* SFONDO GOD OF WAR */
-    background: linear-gradient(to bottom,
-        rgba(0,0,0,0.85) 0%,
-        rgba(255,80,0,0.4) 100%
-    );
-
-    /* ANIMAZIONE FUOCO */
-    animation: fireGlow 2.2s infinite ease-in-out;
-}
-
-/* BAGLIORE FUOCO God of War */
-@keyframes fireGlow {
-    0%   { box-shadow: 0 0 20px 8px rgba(255, 40, 0, 0.45); }
-    50%  { box-shadow: 0 0 45px 18px rgba(255, 90, 0, 0.8); }
-    100% { box-shadow: 0 0 20px 8px rgba(255, 40, 0, 0.45); }
-}
-
-/* BOX principale */
-.story-text {
     width: 60%;
     margin: 40px auto;
-    text-align: left;
-    line-height: 1.7em;
-    font-family: 'GodOfWar';
-    font-size: 1.3em;
     padding: 40px;
-    color: #fff;
-
-    background: linear-gradient(to bottom,
-        rgba(0,0,0,0.85),
-        rgba(255,80,0,0.35)
-    );
-
-    border-radius: 20px;
-    position: relative;
-    z-index: 2;
-}
-
-
-/* 🔥 1) RUNE lungo il PERIMETRO — layer sopra lo sfondo */
-.story-text::before {
-    content: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚷᚨᚦᛖᚱ ᚨᚱᛟᚢᚾᛞ ᚦᛖ ᚠᛁᚱᛖ ᛟᚠ ᚱᛖᚢᛟᛚᚢᛏᛟᚾ";
-    /* ripetute MOLTE volte per riempire tutto il bordo */
-    position: absolute;
-    inset: 0;
-    padding: 10px;
-    pointer-events: none;
-
-    color: rgba(255,120,40,0.8);
-    font-family: 'GodOfWar';
+    font-family: 'GodOfWar', 'UnifrakturCook';
+    line-height: 1.8em;
     font-size: 1.3em;
-    letter-spacing: 12px;
-
-    /* Layout che distribuisce le rune lungo il perimetro */
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-
-    /* Effetto brillante */
-    text-shadow:
-        0 0 8px rgba(255,90,0,0.9),
-        0 0 18px rgba(255,40,0,1);
-
-    animation: runeGlow 3.5s infinite alternate;
-}
-
-/* 🔥 Effetto pulse sulle rune */
-@keyframes runeGlow {
-    0% {
-        text-shadow:
-            0 0 6px rgba(255,80,0,0.6),
-            0 0 14px rgba(255,40,0,0.7);
-    }
-    50% {
-        text-shadow:
-            0 0 14px rgba(255,120,0,1),
-            0 0 28px rgba(255,60,0,1);
-    }
-    100% {
-        text-shadow:
-            0 0 6px rgba(255,80,0,0.6),
-            0 0 14px rgba(255,40,0,0.7);
-    }
-}
-
-
-/* 🔥 2) Bordo incandescente sotto alle rune */
-.story-text::after {
-    content: "";
-    position: absolute;
-    inset: 0;
+    color: #ffd9b3;
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
+    z-index: 10; /* TESTO SEMPRE SOPRA */
+}
+
+/* RUNE IN ALTO */
+.story-text::before {
+    content: "ᚦ ᚱ ᚨ ᚲ ᛟ ᛉ ᚾ ᛃ ᚠ ᛏ ᛗ ᚺ ᚹ ᛞ ᚷ ᚢ";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    color: #ff6600;
+    text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
+    z-index: 0;          /* RUNIC ORNAMENT BEHIND TEXT */
     pointer-events: none;
-
-    border: 4px solid transparent;
-    border-image: linear-gradient(45deg,
-        rgba(61, 1, 1, 0.6),
-        rgba(255,40,0,1),
-        rgba(255, 165, 19, 0.7)
-    ) 1;
-
-    animation: borderPulse 2.8s infinite ease-in-out;
-    z-index: -1;
 }
 
-@keyframes borderPulse {
-    0%   { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
-    50%  { filter: drop-shadow(0 0 18px rgba(255,90,0,0.9)); }
-    100% { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
+/* RUNE IN BASSO */
+.story-text::after {
+    content: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚷᚨᚦᛖᚱ ᚨᚱᛟᚢᚾᛞ ᚦᛖ ᚠᛁᚱᛖ ᛟᚠ ᚱᛖᚢᛟᛚᚢᛏᛟᚾ";
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    color: #1e1946;
+    text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
+    z-index: 0;
+    pointer-events: none;
 }
-
 
 
 /* Container immagine */
