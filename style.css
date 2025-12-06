@@ -105,7 +105,7 @@ a:hover {
 
 /* ⭐ Effetto 3D luminoso */
 .rune-glow {
-    color: #ff4500;
+    color: #02f2ff;
     text-shadow:
         0 0 8px #ff2200,
         0 0 15px #ff5500,
@@ -165,7 +165,7 @@ a:hover {
     position: absolute;
     left: -60px;
     top: 50%;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
     pointer-events: none;
@@ -177,7 +177,7 @@ a:hover {
     position: absolute;
     right: -60px;
     top: 50%;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
     pointer-events: none;
