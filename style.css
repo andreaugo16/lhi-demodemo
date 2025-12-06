@@ -98,22 +98,7 @@ a:hover {
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
-/* 🎯 RUNE DELLA CORNICE — TESTO */
-:root {
-    --rune-text: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚠᛁᚱᛖ";
-}
 
-/* ⭐ Effetto 3D luminoso */
-.rune-glow {
-    color: #02f2ff;
-    text-shadow:
-        0 0 8px #ff2200,
-        0 0 15px #ff5500,
-        0 0 25px #ffa040,
-        2px 2px 4px #000;
-    font-size: 2.2em;
-    font-family: 'UnifrakturCook', 'GodOfWar';
-}
 
 /* RUNE IN ALTO */
 .story-text::before {
@@ -133,6 +118,11 @@ a:hover {
 
 }
 
+@keyframes borderPulse {
+    0%   { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
+    50%  { filter: drop-shadow(0 0 18px rgba(255,90,0,0.9)); }
+    100% { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
+}
 
 
 /* RUNE IN BASSO */
@@ -182,6 +172,23 @@ a:hover {
     text-orientation: upright;
     pointer-events: none;
     z-index: 0;
+}
+
+/* 🎯 RUNE DELLA CORNICE — TESTO */
+:root {
+    --rune-text: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚠᛁᚱᛖ";
+}
+
+/* ⭐ Effetto 3D luminoso */
+.rune-glow {
+    color: #02f2ff;
+    text-shadow:
+        0 0 8px #ff2200,
+        0 0 15px #ff5500,
+        0 0 25px #ffa040,
+        2px 2px 4px #000;
+    font-size: 2.2em;
+    font-family: 'UnifrakturCook', 'GodOfWar';
 }
 
 /* CORNICE RUNICA */
