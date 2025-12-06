@@ -106,7 +106,7 @@ a:hover {
 
 /* RUNE IN ALTO */
 .story-text::before {
-    content: "ᚦ ᚱ ᚨ ᚲ ᛟ ᛉ ᚾ ᛃ ᚠ ᛏ ᛗ ᚺ ᚹ ᛞ ᚷ ᚢ";
+    content: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚷᚨᚦᛖᚱ ᚨᚱᛟᚢᚾᛞ ᚦᛖ ᚠᛁᚱᛖ ᛟᚠ ᚱᛖᚢᛟᛚᚢᛏᛟᚾ";
     position: absolute;
     top: -35px;
     left: 0;
@@ -128,7 +128,7 @@ a:hover {
     width: 100%;
     text-align: center;
     font-size: 1.4em;
-    color: #1e1946;
+    color: #edc605;
     text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
     z-index: 0;
     pointer-events: none;
