@@ -115,64 +115,100 @@ a:hover {
     100% { box-shadow: 0 0 20px 8px rgba(255, 40, 0, 0.45); }
 }
 
-/* BORDO CON RUNE INCANDESCENTI */
+/* BOX principale */
+.story-text {
+    width: 60%;
+    margin: 40px auto;
+    text-align: left;
+    line-height: 1.7em;
+    font-family: 'GodOfWar';
+    font-size: 1.3em;
+    padding: 40px;
+    color: #fff;
+
+    background: linear-gradient(to bottom,
+        rgba(0,0,0,0.85),
+        rgba(255,80,0,0.35)
+    );
+
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* 🔥 1) RUNE lungo il PERIMETRO — layer sopra lo sfondo */
 .story-text::before {
     content: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚷᚨᚦᛖᚱ ᚨᚱᛟᚢᚾᛞ ᚦᛖ ᚠᛁᚱᛖ ᛟᚠ ᚱᛖᚢᛟᛚᚢᛏᛟᚾ";
-    /* puoi cambiare queste rune con le tue preferite */
-    font-family: 'GodOfWar';
-    letter-spacing: 8px;
-
+    /* ripetute MOLTE volte per riempire tutto il bordo */
     position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 4px 10px;
+    inset: 0;
+    padding: 10px;
+    pointer-events: none;
 
-    font-size: 1.1em;
-    color: rgba(255, 120, 40, 0.8);
+    color: rgba(255,120,40,0.8);
+    font-family: 'GodOfWar';
+    font-size: 1.3em;
+    letter-spacing: 12px;
+
+    /* Layout che distribuisce le rune lungo il perimetro */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+    /* Effetto brillante */
     text-shadow:
-        0 0 5px rgba(255,100,10,0.7),
-        0 0 15px rgba(255,60,0,0.8),
-        0 0 25px rgba(255,30,0,1);
+        0 0 8px rgba(255,90,0,0.9),
+        0 0 18px rgba(255,40,0,1);
 
-    background: rgba(20, 10, 5, 0.45);
-    border-radius: 6px;
-
-    animation: runeGlow 3s infinite ease-in-out;
+    animation: runeGlow 3.5s infinite alternate;
 }
 
-/* GLOW delle rune */
+/* 🔥 Effetto pulse sulle rune */
 @keyframes runeGlow {
-    0%   { text-shadow: 0 0 8px rgba(0, 0, 0, 0.6), 0 0 18px rgba(255,40,0,0.7); }
-    50%  { text-shadow: 0 0 15px rgb(220, 16, 9), 0 0 35px rgba(255,80,0,1); }
-    100% { text-shadow: 0 0 8px rgba(103, 4, 4, 0.6), 0 0 18px rgba(255,40,0,0.7); }
+    0% {
+        text-shadow:
+            0 0 6px rgba(255,80,0,0.6),
+            0 0 14px rgba(255,40,0,0.7);
+    }
+    50% {
+        text-shadow:
+            0 0 14px rgba(255,120,0,1),
+            0 0 28px rgba(255,60,0,1);
+    }
+    100% {
+        text-shadow:
+            0 0 6px rgba(255,80,0,0.6),
+            0 0 14px rgba(255,40,0,0.7);
+    }
 }
 
-/* BORDO RUNICO SUI LATI (effetto inciso) */
+
+/* 🔥 2) Bordo incandescente sotto alle rune */
 .story-text::after {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 12px;
+    border-radius: 20px;
+    pointer-events: none;
 
-    border: 3px solid transparent;
+    border: 4px solid transparent;
     border-image: linear-gradient(45deg,
-        rgba(255,80,0,0.7),
-        rgba(255,30,0,0.9),
-        rgba(255,120,0,0.7)
+        rgba(61, 1, 1, 0.6),
+        rgba(255,40,0,1),
+        rgba(255, 165, 19, 0.7)
     ) 1;
 
     animation: borderPulse 2.8s infinite ease-in-out;
-    pointer-events: none;
     z-index: -1;
 }
 
 @keyframes borderPulse {
-    0%   { filter: drop-shadow(0 0 5px rgba(255,50,0,0.3)); }
-    50%  { filter: drop-shadow(0 0 18px rgba(255,90,0,0.8)); }
-    100% { filter: drop-shadow(0 0 5px rgba(255,50,0,0.3)); }
+    0%   { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
+    50%  { filter: drop-shadow(0 0 18px rgba(255,90,0,0.9)); }
+    100% { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
 }
-
 
 
 
