@@ -165,7 +165,7 @@ a:hover {
     position: absolute;
     left: -60px;
     top: 50%;
-    transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(180deg);
     writing-mode: vertical-rl;
     text-orientation: upright;
     pointer-events: none;
@@ -177,7 +177,7 @@ a:hover {
     position: absolute;
     right: -60px;
     top: 50%;
-    transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(180deg);
     writing-mode: vertical-rl;
     text-orientation: upright;
     pointer-events: none;
@@ -193,7 +193,6 @@ a:hover {
     box-sizing: border-box;
 
     border-image-source: url("runecorn.png");
-    border-image-slice: 50;
     border-image-repeat: round;
     border-image-width: 35px;
 
