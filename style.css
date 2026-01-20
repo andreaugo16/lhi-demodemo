@@ -554,3 +554,27 @@ a:hover {
   box-shadow: 0 20px 50pxrgba(0, 0, 255, 0.5);
 }
 
+
+#storyInput {
+  width: 80%;                /* stessa larghezza dei box delle storie */
+  max-width: 600px;          /* stessa larghezza massima dei box */
+  min-height: 150px;         /* altezza comoda per scrivere */
+  padding: 20px;             /* spazio interno */
+  border-radius: 12px;       /* angoli arrotondati come i box */
+  border: 2px solid rgba(0,0,0,0.5); /* bordo visibile */
+  background: rgba(0, 0, 0, 0.3);    /* sfondo nero trasparente */
+  color: white;              /* colore del testo */
+  font-size: 1rem;
+  resize: vertical;          /* l’utente può allungarlo in verticale */
+  margin-bottom: 15px;       /* spazio sotto per il pulsante */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* effetto hover sul textarea */
+#storyInput:hover {
+  transform: scale(1.02);    /* leggero ingrandimento */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+
