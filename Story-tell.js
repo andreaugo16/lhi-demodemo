@@ -3,16 +3,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("storyInput");
   const confirmation = document.getElementById("confirmation");
 
-  if (!button || !input || !confirmation) {
-    console.error("Elementi non trovati");
-    return;
-  }
-
   button.addEventListener("click", () => {
     const text = input.value.trim();
     if (!text) return;
 
-    confirmation.textContent = "Your story has been sent.";
+    // Crea un nuovo div per la storia
+    const storyDiv = document.createElement("div");
+    storyDiv.className = "story";
+    storyDiv.textContent = text;
+
+    // Aggiunge la storia sotto il div di conferma
+    confirmation.appendChild(storyDiv);
+
+    // Pulisce il textarea
     input.value = "";
+
+    // Aggiorna il messaggio di conferma
+    confirmation.scrollIntoView({ behavior: "smooth" });
   });
 });
