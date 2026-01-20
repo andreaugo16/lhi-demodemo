@@ -41,7 +41,7 @@ h1 {
     color: #f80606;
     background: rgb(0, 0, 0);
     border-radius: 15px;
-    box-shadow: auto rgba(0, 0, 0, 0.4);
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.4);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -53,7 +53,6 @@ a {
     margin: 15px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-    box-shadow: auto rgb(0, 0, 0);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -64,7 +63,6 @@ p {
     margin: 15px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-    box-shadow: auto rgb(0, 0, 0);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -134,7 +132,6 @@ a:hover {
     color: #f10a0a;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -270,7 +267,6 @@ a:hover {
     color: #f50404;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    box-shadow: 0 0 40px rgba(249, 9, 9, 0.4);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -558,7 +554,7 @@ a:hover {
     color: #f20a02;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
+
     z-index: 10; /* TESTO SEMPRE SOPRA */
     
 }
@@ -584,7 +580,7 @@ a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
   word-wrap: break-word;
-  box-shadow: 0 4px 10px rgba(255, 38, 0, 0.5);
+
 }
 
 /* effetto al passaggio del mouse */
@@ -616,5 +612,4 @@ a:hover {
   transform: scale(1.02);    /* leggero ingrandimento */
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
-
 
