@@ -135,55 +135,6 @@ a:hover {
 }
 
 
-
-/* RUNE IN ALTO */
-.story-text::before {
-    content: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚷᚨᚦᛖᚱ ᚨᚱᛟᚢᚾᛞ ᚦᛖ ᚠᛁᚱᛖ ᛟᚠ ᚱᛖᚢᛟᛚᚢᛏᛟᚾ";
-    position: absolute;
-    top: -35px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.4em;
-    color: #f10909;
-    text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
-    z-index: 0;          /* RUNIC ORNAMENT BEHIND TEXT */
-    pointer-events: none;
-
-    animation: runeGlow 3.5s infinite alternate;
-    border: 4px solid transparent;
-
-    animation: borderPulse 2.8s infinite ease-in-out;
-    z-index: -1;
-
-}
-
-@keyframes borderPulse {
-    0%   { filter: drop-shadow(0 0 5px rgba(245, 51, 3, 0.4)); }
-    50%  { filter: drop-shadow(0 0 18px rgba(230, 45, 70, 0.9)); }
-    100% { filter: drop-shadow(0 0 5px rgba(241, 28, 28, 0.4)); }
-}
-
-
-/* RUNE IN BASSO */
-.story-text::after {
-    content: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚷᚨᚦᛖᚱ ᚨᚱᛟᚢᚾᛞ ᚦᛖ ᚠᛁᚱᛖ ᛟᚠ ᚱᛖᚢᛟᛚᚢᛏᛟᚾ";
-    position: absolute;
-    bottom: -35px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.4em;
-    color: #000000;
-    text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
-    z-index: 0;
-    pointer-events: none;
-      border: 4px solid transparent;
-
-    animation: borderPulse 2.8s infinite ease-in-out;
-    z-index: -1;
-}
-
 @keyframes borderPulse {
     0%   { filter: drop-shadow(0 0 5px rgb(255, 255, 255)); }
     50%  { filter: drop-shadow(0 0 18px rgba(223, 3, 3, 0.9)); }
@@ -239,21 +190,6 @@ a:hover {
     font-family: 'UnifrakturCook', 'GodOfWar';
 }
 
-/* CORNICE RUNICA */
-.rune-frame {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    border: 35px solid transparent;
-    box-sizing: border-box;
-
-    border-image-source: url("runecorn.png");
-    border-image-repeat: round;
-    border-image-width: 35px;
-
-    filter: drop-shadow(0 0 20px #ff4500);
-    z-index: 9999;
-}
 
 .about-text {
     position: relative;
