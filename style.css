@@ -261,7 +261,7 @@ a:hover {
     object-fit: cover;
 }
 /* effetto hover sul textarea */
-.image-container:hover {
+.images-row:hover {
   transform: scale(1.02);    /* leggero ingrandimento */
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
