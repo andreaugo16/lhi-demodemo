@@ -499,6 +499,32 @@ a:hover {
     100% { background-position: 0 100%; }
 }
 
+
+
+
+
+/*storytell part*/
+
+
+.Story-tell-text {
+    position: relative;
+    width: 60%;
+    margin: 40px auto;
+    padding: 40px;
+    font-family: 'GodOfWar', 'UnifrakturCook';
+    line-height: 1.8em;
+    font-size: 1.3em;
+    color: #ffd9b3;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
+    z-index: 10; /* TESTO SEMPRE SOPRA */
+}
+
+
+
+
+
 #confirmation {
   display: flex;
   flex-direction: column; /* uno sotto l'altro */
