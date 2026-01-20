@@ -551,7 +551,7 @@ a:hover {
 /* effetto al passaggio del mouse */
 .Story-tell-box:hover {
   transform: scale(1.50);
-  box-shadow: 0 20px 50pxrgba(0, 0, 255, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 255, 0.5);
 }
 
 
@@ -567,7 +567,7 @@ a:hover {
   font-size: 1rem;
   resize: vertical;          /* l’utente può allungarlo in verticale */
   margin-bottom: 15px;       /* spazio sotto per il pulsante */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0,0,255,0.5);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
