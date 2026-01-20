@@ -500,47 +500,31 @@ a:hover {
 }
 
 /*storytell css*/
-.Story-tell-btn {
-  display: inline-block;
-  padding: 100px 200px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  font-family: 'GodOfWar', 'UnifrakturCook';
-  font-size: 1rem;
-}
-
-
-.Story-tell {
-  background: #fff;
-  padding: 15px;
-  margin-top: 10px;
-  border-left: 4px solid black;
-}
-
-
 #confirmation {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: column; /* un box sotto l'altro */
+  gap: 20px; /* spazio tra i box */
   margin-top: 20px;
 }
 
-/* box nero trasparente */
+/* box nero trasparente con effetto zoom */
 .Story-tell {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7); /* nero trasparente */
   color: white;
-  padding: 15px;
-  max-width: 60%;
-  border-radius: 10px;
-  transition: transform 0.2s;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 80%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
   word-wrap: break-word;
 }
 
-/* ingrandimento al passaggio del mouse */
+/* effetto al passaggio del mouse */
 .Story-tell:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
+
 
 
 

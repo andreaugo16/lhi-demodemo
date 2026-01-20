@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("sendStory");
   const input = document.getElementById("storyInput");
   const confirmation = document.getElementById("confirmation");
-  
-  let alignRight = true; // alternanza allineamento
 
   button.addEventListener("click", () => {
     const text = input.value.trim();
@@ -14,17 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     storyDiv.className = "story";
     storyDiv.textContent = text;
 
-    // alterna allineamento
-    storyDiv.style.alignSelf = alignRight ? "flex-end" : "flex-start";
-    alignRight = !alignRight;
-
     // aggiunge il div nella sezione
     confirmation.appendChild(storyDiv);
 
     // pulisce textarea
     input.value = "";
 
-    // scroll automatico se necessario
+    // scroll automatico
     storyDiv.scrollIntoView({ behavior: "smooth" });
   });
 });
