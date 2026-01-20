@@ -9,20 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+const button = document.getElementById("sendStory");
 const input = document.getElementById("storyInput");
-const button = document.getElementById("submitStory");
-const stories = document.getElementById("stories");
+const confirmation = document.getElementById("confirmation");
 
-if (button) {
-  button.addEventListener("click", () => {
-    const text = input.value.trim();
-    if (!text) return;
+button.addEventListener("click", () => {
+  const text = input.value.trim();
+  if (!text) return;
 
-    const div = document.createElement("div");
-    div.className = "story";
-    div.textContent = text;
+  confirmation.textContent = "Your story has been sent.";
+  input.value = "";
+});
 
-    stories.prepend(div);
-    input.value = "";
-  });
-}

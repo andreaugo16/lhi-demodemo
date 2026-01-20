@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <title>Full Story</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Story-tell</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Share your story</h1>
-   
-<section id="story-tell">
-  <h1>Story-tell</h1>
-  <p>Scrivi la tua storia.</p>
 
-  <textarea id="storyInput" placeholder="C'era una volta..."></textarea>
-  <button id="submitStory">Invia</button>
+  <main>
+    <h1>Story-tell</h1>
+    <p>Write your story.</p>
 
-  <div id="stories"></div>
-</section>
+    <textarea id="storyInput" placeholder="Start writing..."></textarea>
+    <button id="sendStory">Send</button>
 
-    
+    <div id="confirmation"></div>
+  </main>
 
-    <div class="weird-box">We will contact you</div>
+ 
+  
 </body>
 </html>
+
+
