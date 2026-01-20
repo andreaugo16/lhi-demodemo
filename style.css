@@ -522,9 +522,6 @@ a:hover {
 }
 
 
-
-
-
 #confirmation {
   display: flex;
   flex-direction: column; /* uno sotto l'altro */
@@ -545,13 +542,14 @@ a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
   word-wrap: break-word;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0,0,255,0.5);
 }
 
 /* effetto al passaggio del mouse */
 .Story-tell-box:hover {
   transform: scale(1.50);
   box-shadow: 0 20px 50px rgba(0, 0, 255, 0.5);
+  background-image: url('thegodofauraleftflame.png');
 }
 
 
