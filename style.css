@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; /* effetto epico parallax */
     font-family: 'Ringbearer Medium';
-    color: #f55df0;
+    color: #fd0202;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -38,19 +38,19 @@ body {
 h1 {
     font-size: 3em;
     margin-top: 20px;
-    color: #f806e8;
+    color: #f80606;
 }
 
 /* Link menu */
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #ff00c3;
+    color: #ff0000;
     margin: 0 10px;
 }
 
 a:hover {
-    color: #bf09db;
+    color: #f90404;
 }
 
 /* Weird box */
@@ -112,7 +112,7 @@ a:hover {
     font-family: 'GodOfWar', 'UnifrakturCook';
     line-height: 1.8em;
     font-size: 1.3em;
-    color: #f10a9c;
+    color: #f10a0a;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
@@ -130,7 +130,7 @@ a:hover {
     width: 100%;
     text-align: center;
     font-size: 1.4em;
-    color: #e005c3;
+    color: #f10909;
     text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
     z-index: 0;          /* RUNIC ORNAMENT BEHIND TEXT */
     pointer-events: none;
@@ -248,10 +248,10 @@ a:hover {
     font-family: 'GodOfWar', 'UnifrakturCook';
     line-height: 1.8em;
     font-size: 1.3em;
-    color: #f504b9;
+    color: #f50404;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    box-shadow: 0 0 40px rgba(230, 9, 167, 0.4);
+    box-shadow: 0 0 40px rgba(249, 9, 9, 0.4);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -295,7 +295,7 @@ a:hover {
     width: 200px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(238, 4, 152, 0.7);
+    box-shadow: 5px 5px 20px rgba(238, 4, 4, 0.7);
     transition: transform 0.3s ease;
 }
 
@@ -330,7 +330,7 @@ a:hover {
 /* Titolo descrizione */
 .side-description h2 {
     margin-top: 0;
-    color: #6dff7a;
+    color: #fd0202;
 }
 
 /* --- DESCRIZIONE NEON + FLOATING --- */
@@ -419,7 +419,7 @@ a:hover {
     0% { transform: translate(0); text-shadow: 0 0 0 transparent; }
     20% { transform: translate(-1px, 1px); text-shadow: -2px 0 red, 2px 0 blue; }
     40% { transform: translate(1px, -1px); text-shadow: -2px 0 blue, 2px 0 red; }
-    60% { transform: translate(-1px, -1px); text-shadow: -3px 0 #6dff7a, 3px 0 red; }
+    60% { transform: translate(-1px, -1px); text-shadow: -3px 0 #ff6d6d, 3px 0 red; }
     80% { transform: translate(0.5px, 0); text-shadow: 2px 0 blue, -2px 0 red; }
     100% { transform: translate(0); text-shadow: none; }
 }
@@ -459,7 +459,7 @@ a:hover {
     text-align: left;
 
     background: rgba(0, 0, 0, 0.45);
-    border: 2px solid #6dff7a;
+    border: 2px solid #f60303;
 
     color: #ffffff;
     overflow: hidden;
@@ -510,7 +510,7 @@ a:hover {
     0% { text-shadow: 0 0 0 transparent; }
     20% { text-shadow: -3px 0 red, 3px 0 blue; }
     40% { text-shadow: -2px 0 blue, 2px 0 red; }
-    60% { text-shadow: 3px 0 #6dff7a, -3px 0 red; }
+    60% { text-shadow: 3px 0 #ee1c1c, -3px 0 red; }
     80% { text-shadow: -2px 0 red, 2px 0 blue; }
     100% { text-shadow: none; }
 }
@@ -564,7 +564,7 @@ a:hover {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
   word-wrap: break-word;
-  box-shadow: 0 4px 10px rgba(0,0,255,0.5);
+  box-shadow: 0 4px 10px rgba(255, 38, 0, 0.5);
 }
 
 /* effetto al passaggio del mouse */
@@ -587,7 +587,7 @@ a:hover {
   font-size: 1rem;
   resize: vertical;          /* l’utente può allungarlo in verticale */
   margin-bottom: 15px;       /* spazio sotto per il pulsante */
-  box-shadow: 0 4px 10px rgba(0,0,255,0.5);
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
