@@ -40,8 +40,8 @@ h1 {
     margin-top: 20px;
     color: #f80606;
     background: rgb(0, 0, 0);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: auto;
+    box-shadow: auto rgba(0, 0, 0, 0.4);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -50,10 +50,10 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: #ff0000;
-    margin: 0 10px;
+    margin: auto;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: auto;
+    box-shadow: auto rgb(0, 0, 0);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -61,10 +61,10 @@ p {
     text-decoration: none;
     font-weight: bold;
     color: #ff0000;
-    margin: 0 10px;
+    margin: auto;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: auto;
+    box-shadow: auto rgb(0, 0, 0);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
