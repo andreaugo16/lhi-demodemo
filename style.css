@@ -502,10 +502,11 @@ a:hover {
 
 .Story-tell-btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 100px 200px;
   background: black;
   color: white;
   text-decoration: none;
+  font-family: 'GodOfWar', 'UnifrakturCook';
   font-size: 1rem;
 }
 
