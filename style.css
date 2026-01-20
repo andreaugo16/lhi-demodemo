@@ -260,7 +260,11 @@ a:hover {
     border-radius: 8px;
     object-fit: cover;
 }
-
+/* effetto hover sul textarea */
+.gallery:hover {
+  transform: scale(1.02);    /* leggero ingrandimento */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
 /* Contenitore immagini in fila */
 .images-row {
     display: flex;
