@@ -11,6 +11,28 @@ body {
     margin: 0;
     padding: 0;
 }
+#confirmation {
+  position: relative;
+  background-image: url('leftonfire.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+#confirmation::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* overlay nero trasparente */
+  border-radius: 12px;
+  z-index: 0;
+}
+
+#confirmation > * {
+  position: relative;
+  z-index: 1; /* fa stare testo sopra overlay */
+}
 
 /* Titolo */
 h1 {
