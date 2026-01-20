@@ -385,11 +385,11 @@ a:hover {
 
     background: rgba(0, 0, 0, 0.4);
 
-    border: 2px solid #6dff7a;
+    border: 2px solid #ef1414;
     box-shadow:
-        0 0 10px #6dff7a,
-        0 0 20px #6dff7a,
-        0 0 30px #6dff7a;
+        0 0 10px #e51a08,
+        0 0 20px #f03507,
+        0 0 30px #f11b03;
 
     color: #ffffff;
 
