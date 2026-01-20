@@ -173,10 +173,6 @@ a:hover {
     z-index: -1;
 }
 
-/* 🎯 RUNE DELLA CORNICE — TESTO */
-:root {
-    --rune-text: "ᛚᛖᚠᛏ ᚺᚨᚾᛞᛖᚱᛊ ᚠᛁᚱᛖ";
-}
 
 /* ⭐ Effetto 3D luminoso */
 .rune-glow {
