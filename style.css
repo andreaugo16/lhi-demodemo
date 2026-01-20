@@ -39,7 +39,6 @@ h1 {
     font-size: 3em;
     margin-top: 20px;
     color: #f80606;
-    background: rgb(0, 0, 0);
     border-radius: 15px;
     box-shadow: 20px 100px rgba(0, 0, 0, 0);
     z-index: 10; /* TESTO SEMPRE SOPRA */
