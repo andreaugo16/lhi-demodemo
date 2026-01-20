@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; /* effetto epico parallax */
     font-family: 'Ringbearer Medium';
-    color: #ffb872;
+    color: #f55df0;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -38,19 +38,19 @@ body {
 h1 {
     font-size: 3em;
     margin-top: 20px;
-    color: #ffffff;
+    color: #f806e8;
 }
 
 /* Link menu */
 a {
     text-decoration: none;
     font-weight: bold;
-    color: #ffc800;
+    color: #ff00c3;
     margin: 0 10px;
 }
 
 a:hover {
-    color: #ffce74;
+    color: #bf09db;
 }
 
 /* Weird box */
@@ -112,7 +112,7 @@ a:hover {
     font-family: 'GodOfWar', 'UnifrakturCook';
     line-height: 1.8em;
     font-size: 1.3em;
-    color: #ffd9b3;
+    color: #f10a9c;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
@@ -130,7 +130,7 @@ a:hover {
     width: 100%;
     text-align: center;
     font-size: 1.4em;
-    color: #000000;
+    color: #e005c3;
     text-shadow: 0 0 10px #ff3300, 0 0 25px #ff9900;
     z-index: 0;          /* RUNIC ORNAMENT BEHIND TEXT */
     pointer-events: none;
@@ -144,9 +144,9 @@ a:hover {
 }
 
 @keyframes borderPulse {
-    0%   { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
-    50%  { filter: drop-shadow(0 0 18px rgba(255,90,0,0.9)); }
-    100% { filter: drop-shadow(0 0 5px rgba(255,60,0,0.4)); }
+    0%   { filter: drop-shadow(0 0 5px rgba(245, 51, 3, 0.4)); }
+    50%  { filter: drop-shadow(0 0 18px rgba(230, 45, 70, 0.9)); }
+    100% { filter: drop-shadow(0 0 5px rgba(241, 28, 28, 0.4)); }
 }
 
 
@@ -248,10 +248,10 @@ a:hover {
     font-family: 'GodOfWar', 'UnifrakturCook';
     line-height: 1.8em;
     font-size: 1.3em;
-    color: #ffd9b3;
+    color: #f504b9;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
-    box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
+    box-shadow: 0 0 40px rgba(230, 9, 167, 0.4);
     z-index: 10; /* TESTO SEMPRE SOPRA */
 }
 
@@ -295,7 +295,7 @@ a:hover {
     width: 200px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.7);
+    box-shadow: 5px 5px 20px rgba(238, 4, 152, 0.7);
     transition: transform 0.3s ease;
 }
 
@@ -347,11 +347,11 @@ a:hover {
     background: rgba(0, 0, 0, 0.4);
 
     /* NEON verde */
-    border: 2px solid #6dff7a;
+    border: 2px solid #f10d09;
     box-shadow:
-        0 0 10px #6dff7a,
-        0 0 20px #6dff7a,
-        0 0 30px #6dff7a;
+        0 0 10px #ff6d6d,
+        0 0 20px #ef0505,
+        0 0 30px #fe0328;
 
     /* Animazione floating */
     animation: floatDesc 4s ease-in-out infinite;
@@ -359,10 +359,10 @@ a:hover {
 
 /* Titolo descrizione con neon più forte */
 .side-description h2 {
-    color: #6dff7a;
+    color: #ed1b0c;
     text-shadow:
-        0 0 10px #6dff7a,
-        0 0 20px #6dff7a;
+        0 0 10px #f20b0b,
+        0 0 20px #f02804;
 }
 
 /* Animazione */
@@ -399,11 +399,11 @@ a:hover {
 
 /* Titolo neon + glitch */
 .side-description h2 {
-    color: #6dff7a;
+    color: #e8190a;
     text-shadow:
-        0 0 5px #6dff7a,
-        0 0 10px #6dff7a,
-        0 0 20px #6dff7a;
+        0 0 5px #ef0400,
+        0 0 10px #f03412,
+        0 0 20px #f70606;
     animation: glitchText 1.5s infinite;
 }
 
@@ -536,7 +536,7 @@ a:hover {
     font-family: 'GodOfWar', 'UnifrakturCook';
     line-height: 1.8em;
     font-size: 1.3em;
-    color: #ffd9b3;
+    color: #f20a02;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     box-shadow: 0 0 40px rgba(255, 140, 0, 0.4);
@@ -570,7 +570,7 @@ a:hover {
 /* effetto al passaggio del mouse */
 .Story-tell-box:hover {
   transform: scale(1.50);
-  box-shadow: 0 20px 50px rgba(0, 0, 255, 0.5);
+  box-shadow: 0 20px 50px rgba(247, 2, 2, 0.5);
   background-image: url('leftonfire.png');
 }
 
