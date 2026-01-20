@@ -1,7 +1,7 @@
 /* Body e background */
 body {
     background-image: url('leftonfire.png');
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* effetto epico parallax */
