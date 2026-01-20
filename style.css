@@ -499,32 +499,31 @@ a:hover {
     100% { background-position: 0 100%; }
 }
 
-/*storytell css*/
 #confirmation {
   display: flex;
-  flex-direction: column; /* un box sotto l'altro */
-  gap: 20px; /* spazio tra i box */
+  flex-direction: column; /* uno sotto l'altro */
+  gap: 20px; /* spazio verticale tra i box */
   margin-top: 20px;
+  padding: 20px; /* spazio interno alla sezione */
+  align-items: center; /* centra i box nella pagina */
 }
 
-/* box nero trasparente con effetto zoom */
-.Story-tell {
-  background: rgba(0, 0, 0, 0.7); /* nero trasparente */
+/* box nero trasparente */
+.Story-tell-box {
+  background: rgba(0, 0, 0, 0.8); /* nero trasparente */
   color: white;
-  padding: 20px;
+  padding: 20px; /* distanza tra testo e bordo del box */
   border-radius: 12px;
-  max-width: 80%;
+  width: 80%; /* i box non toccano i bordi della pagina */
+  max-width: 600px; /* larghezza massima */
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
   word-wrap: break-word;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 /* effetto al passaggio del mouse */
-.Story-tell:hover {
+.Story-tell-box:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
 }
-
-
-
-

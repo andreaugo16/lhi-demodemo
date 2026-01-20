@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // crea il div della storia
     const storyDiv = document.createElement("div");
-    storyDiv.className = "story";
+    storyDiv.className = "Story-tell-box";
     storyDiv.textContent = text;
 
     // aggiunge il div nella sezione
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // pulisce textarea
     input.value = "";
 
-    // scroll automatico
+    // scroll automatico verso l'ultimo box
     storyDiv.scrollIntoView({ behavior: "smooth" });
   });
 });
